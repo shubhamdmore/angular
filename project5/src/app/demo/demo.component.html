@@ -1,0 +1,55 @@
+<p>demo works!</p>
+<h3>{{mydata}}</h3>
+<h3>{{5*5}}</h3>
+<button (click)="myfun()"> click me</button>
+<button  [disabled]='isdisableds'>proprty binding</button>
+<h2>2 way data binding</h2><br>
+
+<button (click)="twodb(name.value)">2wdb</button>
+<input type="text" [(ngModel)]="myname"><br>
+<h3>hiii  {{myname}}</h3><br>
+
+<h1 *ngIf="true">this is ng if directives</h1>
+
+<br><h2>ng for derectives</h2>
+<div *ngFor="let i of names">
+   
+    <h2>{{i}}</h2>
+    
+ 
+
+</div>
+<br>
+
+<h1>this is ng switch</h1>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">
+         <h3>This is red color</h3>
+    </div>
+      <div *ngSwitchCase="'green'">
+         <h3>This is green color</h3>
+    </div>
+      <div *ngSwitchCase="'blue'">
+         <h3>This is blue color</h3>
+    </div>
+
+</div><br>
+
+<h2 [ngStyle]="{'color':'red'}">this is ng style</h2>
+
+
+<h2>enter your name</h2>
+<input type="text" [(ngModel)]="values">
+<h2>welcome {{values}}</h2>
+
+<h3>two way db without ng model</h3>
+<input type="text" #myvar1>
+<button (click)="myfunction(myvar1.value)">2wdb</button>
+
+
+<h1>directives in angular</h1>
+<h3>*ngif</h3>
+<h3>*ngFor</h3>
+<h3>*ngSwitch</h3>
+
+<h1 *ngIf="true">This is ng if directive</h1>

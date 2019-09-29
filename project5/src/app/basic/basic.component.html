@@ -1,0 +1,52 @@
+<p>basic works!</p>
+<h3>{{mystring}}</h3>
+<img [src]="url">
+<h2 >This is property binding</h2>
+<button class="btn btn-primary" [disabled]='isdisableds'>proprty binding</button>
+<h3>  this is class binding</h3>
+<button (click)='myfun()'>event binding</button>
+<h1>two way databinding</h1>
+<input type="text" #myvar>
+<button (click)='mytwdb(myvar.value)'>2wdb</button><br><br>
+<input type="text" [(ngModel)]='myname'>
+
+<h1>welcome to {{myname}}</h1>
+<h1 *ngIf="true">this is ng if directives</h1>
+<p [style.color]="'darkorchid'">
+    This is style binding
+  </p>
+
+<!-- <div *ngIf="ngvalue" ; then thenblock ; else elseblock>
+    
+<ng-templete #thenblock>
+<h1>if block exicuted</h1>
+</ng-templete>
+
+<ng-templete #elseblock>
+<h1>else block exicuted</h1>
+</ng-templete>
+
+</div> -->
+
+<div [ngSwitch] = "color">
+
+    <div *ngSwitchCase="'red'">
+     <h1>this is red color</h1> 
+    </div>
+
+    <div *ngSwitchCase="'green'">
+     <h1>this is green color</h1>
+    </div>
+
+     <div *ngSwitchCase="'blue'">
+     <h1>this is blue color</h1>
+    </div>
+       
+    
+    
+</div>
+
+
+<div *ngFor = "let xyz of car ">
+ <h2>{{xyz}}</h2>
+</div>
